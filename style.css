@@ -1,0 +1,77 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4e8f8; /* Maintains the soft purple background */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full view height */
+  display: flex;
+  justify-content: flex-end; /* Aligns chat container to the right */
+  align-items: center; /* Centers chat container vertically */
+}
+h1{
+  color: #d81b60;
+  text-align: center;
+}
+
+.chat-container {
+  width: 350px; /* Adjusted for a narrower focus */
+  padding: 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: fixed; /* Keeps the chat container in place when scrolling */
+  right: 20px; /* Distance from the right edge */
+  bottom: 20px; /* Distance from the bottom */
+}
+
+#chatbotName {
+  color: #d81b60; /* Vibrant pink matching the send button */
+  text-align: center; /* Centers the bot's name */
+  margin-bottom: 20px; /* Space between title and chatbox */
+}
+
+/* Rest of the styles remain unchanged */
+
+
+#chatbox {
+  margin-bottom: 20px;
+  height: 300px;
+  overflow: auto;
+  border: 1px solid #d3c0d2; /* Softer border color */
+  padding: 10px;
+  background-color: #fafafa; /* Lighter background for chatbox */
+}
+
+.botText, .userText {
+  margin: 10px 0; /* Add space between messages */
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.botText > span {
+  background-color: #e2d4e6; /* Soft purple for bot messages */
+  color: #4A235A; /* Darker text for readability */
+}
+
+.userText > span {
+  background-color: #f48fb1; /* Soft pink for user messages */
+  color: #fff; /* White text for contrast */
+}
+
+#userInput {
+  width: calc(100% - 58px);
+  padding: 10px;
+  border: 1px solid #d3c0d2; /* Softer border color */
+  border-radius: 20px;
+  background-color: #e9ecef; /* Light background for input */
+  color: #495057; /* Dark color for input text */
+}
+
+#sendBtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d81b60; /* Vibrant pink for the send button */
+  color: white;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners for the button */
+}
